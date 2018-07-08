@@ -4,12 +4,16 @@ html {
 }
 
 body {
-  /* background-image: url("../images/dust_scratches.png"); */
   background-color: #EFF1F3;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   color: #2E382E;
   margin-bottom: 60px;
+}
+
+h2, h3, h4 {
+  text-align: center;
+  margin: 0 auto;
 }
 
 .wrapper {
@@ -17,54 +21,74 @@ body {
   position: relative;
 }
 
-.sticky-header {
-  position: -webkit-sticky;
-  /* Safari */
-  position: sticky;
-  top: 0;
-  z-index: 3;
-  background-image: url("../images/white_pattern.jpg");
-  height: 110px;
-  font-family: 'Paytone One', sans-serif;
-}
-
 .container {
   position: relative;
   margin: 0 auto;
-  padding: 0 4% 0 4%;
+  padding: 4% 4% 0 4%;
 }
 
-.name {
-  position: relative;
-  color: #2E382E;
-  float: left;
-  margin-top: 20px;
+.navbar-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  height: 40px;
+  background-color: #414042;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.social {
-  position: relative;
-  color: #2E382E;
-  float: right;
-  padding-right: 20px;
-  margin-top: 20px;
-  font-size: 1.8rem;
+.logo {
+  display: inline-block;
+  margin: 0;
+  padding-left: 4%;
+}
+
+.social-icons {
+  display: inline-block;
+  font-size: 1.6rem;
+  padding-right: 30px;
 }
 
 .fa-github-square:hover {
-  color: #EA9600;
+  color: #D1A827;
 }
 
 .fa-linkedin:hover {
-  color: #EA9600;
+  color: #D1A827;
 }
 
 .fa-envelope:hover {
-  color: #EA9600;
+  color: #D1A827;
 }
 
-.figure-img {
-  width: 300px;
-  height: 200px;
+.intro-section {
+  background-image: url("../images/bg_circuit_yellow.jpg");
+  /* background: linear-gradient(to bottom right, #F9A602, #FFD300); */
+  height: 500px;
+  margin: 0 auto;
+  padding: 8em 0;
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro-content {
+  /* background: linear-gradient(to bottom right, #FFD300, #FEE12B); */
+  /* background-color: rgba(209, 214, 219, 0.8); */
+  background-color: rgba(80, 83, 86, 0.8);
+  padding: 5%;
+  width: 100%;
+  color: #FFFFFF;
+}
+
+.bg-dark {
+  background-color: #414042;
+}
+
+.icon-light {
+  color: #F5F5F5;
 }
 
 .caption {
@@ -87,11 +111,6 @@ body {
   min-width: 260px;
   min-height: 180px;
   border-radius: 10px;
-  /* border:2px solid #EFF1F3;
-  box-shadow: 10px 10px 5px #ccc;
-	-moz-box-shadow: 10px 10px 5px #ccc;
-	-webkit-box-shadow: 10px 10px 5px #ccc;
-	-khtml-box-shadow: 10px 10px 5px #ccc; */
 }
 
 .filter {
@@ -107,42 +126,53 @@ body {
 [class^='imghvr-'] figcaption, [class*=' imghvr-'] figcaption {
   background-color: #414042;
   border-radius: 10px;
-  margin: 0;
-  padding-bottom: 0;
+  padding: 40px;
 }
 
 [class^='imghvr-'] a, [class*=' imghvr-'] a {
   position: relative;
-  top: 80%;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   padding: 10px;
-  margin: 0 4px 0 0;
+  margin: 0 2% 0 0;
   font-size: .8rem;
+}
+
+.project-button {
+  text-align: center;
+}
+
+.project-section {
+  padding: 6% 0;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #414042;
+  margin: 0 auto;
 }
 
 .button {
   background-color: transparent;
-  border: 2px solid #EA9600;
+  border: 2px solid #D1A827;
   border-radius: 290486px;
   color: #FFFFFF;
   text-decoration: none;
 }
 
 .button:focus, .button:hover {
-  background-color: #EA9600;
+  background-color: #D1A827;
   color: White;
   text-decoration: none;
 }
 
-.bg-color {
-
-}
-
 .footer {
   position: absolute;
-  background: #414042;
   color: #fff;
   font-size: 0.8rem;
   text-align: center;
@@ -154,6 +184,7 @@ body {
 .content-block {
   margin: 20px 0;
 }
+
 
 /* Phone */
 
@@ -185,7 +216,8 @@ body {
   .footer {
     height: 5%;
   } */
-  /* [class^='imghvr-'] a, [class*=' imghvr-'] a {
+
+/* [class^='imghvr-'] a, [class*=' imghvr-'] a {
       position: relative;
       top: 60%;
       bottom: 6%;
@@ -194,4 +226,3 @@ body {
       padding: 6px;
       font-size: .6rem;
   } */
-}
