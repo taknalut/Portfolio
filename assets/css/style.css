@@ -83,14 +83,6 @@ h2, h3, h4 {
   color: #FFFFFF;
 }
 
-.bg-dark {
-  background-color: #414042;
-}
-
-.icon-light {
-  color: #F5F5F5;
-}
-
 .caption {
   font-family: 'Paytone One', sans-serif;
   font-size: 1.8rem;
@@ -171,18 +163,26 @@ h2, h3, h4 {
   text-decoration: none;
 }
 
+.bg-gray {
+  background-color: #414042;
+}
+
+.icon-light {
+  color: #F5F5F5;
+}
+
 .footer {
   position: absolute;
   color: #fff;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   text-align: center;
-  height: 60px;
+  height: 50px;
   bottom: 0;
   width: 100%;
 }
 
 .content-block {
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 
